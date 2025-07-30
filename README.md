@@ -1,4 +1,4 @@
-![EAS-X Banner](![EAS-X Banner](https://raw.githubusercontent.com/Acid642/EAS-X-Emergency-Alert-System-Extended-FiveM/main/banner.png))
+![EAS-X Banner](https://raw.githubusercontent.com/Acid642/EAS-X-Emergency-Alert-System-Extended-FiveM/main/banner.png)
 
 # 📢 FiveM Emergency Alert System (EAS) Script
 
