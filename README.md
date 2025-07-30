@@ -110,8 +110,8 @@ Visit the live GitHub Pages demo at:
 
 ## 🤝 Credits
 
-* Script by: \[YourNameHere]
-* Inspiration: Real-world EAS alerts & [Streamable Sample](https://streamable.com/mlayr)
+* Script by: \Tyler W
+* Inspiration: Real-world EAS alerts & LGDevelopment
 
 ---
 
