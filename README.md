@@ -1,3 +1,5 @@
+![EAS-X Banner](https://raw.githubusercontent.com/Acid642/eas-x/main/banner.png)
+
 # 📢 FiveM Emergency Alert System (EAS) Script
 
 A fully standalone and configurable Emergency Alert System for FiveM servers, featuring in-game GUI message input, scrolling TTS alerts, and customizable alert types like Tornado, Flood, and Test Alerts.
