@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" />
+  <title>EAS UI</title>
+</head>
+<body>
+  <div id="eas-overlay">
+    <div id="eas-text">
+      <div id="eas-static"></div>
+      <div id="eas-message"></div>
+    </div>
+  </div>
+
+  <div id="eas-form">
+    <div class="eas-card">
+      <h2>Emergency Alert System</h2>
+
+      <label for="preset">Presets:</label>
+      <select id="preset" onchange="loadPreset()">
+        <option value="">-- Select a Preset --</option>
+        <option value="tornado">Tornado Warning</option>
+        <option value="storm">Severe Thunderstorm</option>
+        <option value="flood">Flash Flood Warning</option>
+        <option value="amber">AMBER Alert</option>
+        <option value="nuke">Nuclear Emergency</option>
+        <option value="test">EAS System Test</option>
+      </select>
+
+      <input type="text" id="authority" placeholder="Issuing Authority..." />
+      <input type="text" id="message" placeholder="Enter alert message..." />
+
+      <label for="sound">Sound:</label>
+      <select id="sound">
+        <option value="eas">EAS Siren</option>
+        <option value="amber">Amber Alert</option>
+      </select>
+
+      <label><input type="checkbox" id="enableTTS" /> Text-to-Speech</label>
+      <label><input type="checkbox" id="repeatText" /> Repeating Scroll</label>
+
+      <label for="displayMode">Display Mode:</label>
+      <select id="displayMode">
+        <option value="full">Fullscreen</option>
+        <option value="top">Top Bar</option>
+      </select>
+
+      <div class="buttons">
+        <button onclick="sendEAS()">📢 Send Alert</button>
+        <button onclick="closeUI()">❌ Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="eas-audio" src=""></audio>
+  <script src="script.js"></script>
+</body>
+</html>

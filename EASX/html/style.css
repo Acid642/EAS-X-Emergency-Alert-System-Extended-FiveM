@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+#eas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: monospace;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#eas-overlay.fullscreen {
+  height: 100%;
+  border-bottom: 5px solid red;
+}
+
+#eas-overlay.topbar {
+  height: 100px;
+  border-bottom: 5px solid red;
+}
+
+#eas-text {
+  text-align: center;
+  margin: 10px;
+}
+
+#eas-static {
+  font-size: 1.2em;
+}
+
+#eas-message {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+#eas-message.scroll-text {
+  animation: scrollText 12s linear infinite, flashText 1s step-start infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes flashText {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Polished UI for menu */
+#eas-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+
+.eas-card {
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eas-card h2 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.eas-card input,
+.eas-card select {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.eas-card label {
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e74d7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #1c5abf;
+}
